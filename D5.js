@@ -24,7 +24,9 @@ console.log(pets.reverse())
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 
 console.log(pets.redfish[0])*/
-
+pets.push()
+pets.shift("redfish")
+console.log(pets)
 /* ESERCIZIO 5
 
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
@@ -50,8 +52,9 @@ const cars = [
   },
 ];
 
-cars.licensePlate.push("AR1243")
-console.log(cars)
+for (let i = 0; i < cars.length; i++) {
+  cars[i]["licensePlate"] = "FJ 25525";
+}
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
